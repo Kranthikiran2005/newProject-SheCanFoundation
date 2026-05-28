@@ -11,7 +11,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const SECRET_KEY = "mysupersecretkey";
+const SECRET_KEY = process.env.JWT_SECRET;
 
 
 // CONTACT FORM API
